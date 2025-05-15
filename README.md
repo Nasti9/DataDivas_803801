@@ -16,20 +16,9 @@ The ultimate goal is to detect deviations in system behavior at an early stage, 
 
 ## Section 2 – Methods
 
-Our pipeline integrates a combination of time-series forecasting and anomaly detection techniques. The workflow consists of the following stages:
+We followed a sequential pipeline composed of four main phases: Exploratory Data Analysis (EDA), Data Augmentation, Forecasting, and Anomaly Detection.
+For each step, we tested different approaches and selected the one that gave the best results. This allowed us not to settle for the first attempt, but to explore multiple options and make more informed choices along the way.
 
-1. **Data Cleaning and Preprocessing:** Handling of missing values, feature engineering (lags, rolling averages).
-2. **Forecasting Models:** We trained both LSTM-based models and XGBoost regressors on enriched time-series features.
-3. **Anomaly Detection:** Residual-based anomaly scoring using statistical thresholds and Local Outlier Factor (LOF).
-4. **Evaluation and Visualization:** Metrics and visual outputs support interpretation of anomalies.
 
-**Design Choices:**
-- We chose LSTM for its ability to capture temporal dependencies and XGBoost for structured feature modeling.
-- LOF was selected for its robustness in identifying local density anomalies.
-- Synthetic data was generated using [SMOTE/TimeGAN, etc.] to augment underrepresented patterns and enhance generalization.
 
-**Environment Setup:**
-To recreate the environment, use the following:
-```bash
-conda env export > environment.yml
 
