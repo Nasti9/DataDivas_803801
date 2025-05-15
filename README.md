@@ -1,5 +1,5 @@
 # Anomaly Detetction - REPLY 
-**Team Members:** Anastasia Farinaro, Gaia D'Amico, Alessia Lorenzini
+**Team Members:** Anastasia Farinaro (803801) , Gaia D'Amico, Alessia Lorenzini
 
 ---
 
