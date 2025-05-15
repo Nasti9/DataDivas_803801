@@ -36,7 +36,9 @@ Key correlations:
 - TEMPO MAX <-> NUMERO RETRY (0.89)
 - NUMERO TRANSAZIONI <-> TRANSAZIONI ERRATE (0.52)
 - Negative: TEMPO MIN <-> others
-  
+
+![Correlation Heatmap](./images/image2.png)
+
 These insights guided our next steps.
 
 ## 2.2 Data Augmentation ## 
