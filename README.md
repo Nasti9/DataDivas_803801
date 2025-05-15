@@ -51,6 +51,18 @@ GAN-based synthetic generation (via SDV) was discarded due to its failure to lea
 
 To validate each augmented dataset by these approaches, we conducted EDA comparing real and augmented distributions after every try. We evaluated the mean, standard deviation, min/max values, and quantiles of each key variable to ensure alignment with the original dataset. This step was crucial to confirm that the synthetic data enhanced model performance without compromising quality or introducing misleading patterns.
 
+### Synthetic vs Real Data 
+
+**SDV:**
+![Real vs Synthetic - SDV](./images/image3.png)
+
+**LLM-based:**
+![Real vs Synthetic - LLM](./images/image4.png)
+
+**Statistical Noise (Final Choice):**
+![Real vs Synthetic - Noised](./images/image5.png)
+
+
 ## 2.3 Forecasting Models ## 
 
 The goal of this phase was to predict the short-term evolution of data to enable proactive monitoring and anomaly detection. Among all variables, we selected NUMERO TRANSAZIONI as the main target, as it reflects overall system activity and is temporally well-structured.
@@ -76,6 +88,14 @@ This algorithm isolates anomalies by partitioning the data. Points that require 
 
 LOF compares the local density of each point to that of its neighbors, identifying points that reside in sparse regions. It captured anomalies around both smooth transitions and sudden peaks. While it adapts well to local structure, it is sensitive to the n_neighbors parameter and may flag false positives in non-linear zones.
 
+### Anomaly Detection Output
+
+**Delta-Based Anomalies:**
+![Delta-Based Anomaly Detection](./images/image9.png)
+
+**Local Outlier Factor (LOF):**
+![LOF Anomaly Detection](./images/image10.png)
+
 ## Section 3 –  Experimental Design ## 
 
 ## 3.1 Forecasting ## 
@@ -98,6 +118,17 @@ XGboost performance metrics were: MAE = 401.75, RMSE = 519.08, R² = 0.677.
 LSTM model achieved these metrics: MAE = 239.45, RMSE = 327.28, and R² = 0.872.
 
 These metrics confirmed the superiority of LSTM in modeling the temporal behavior of transactional data. Thus, we selected LSTM as the core forecasting model for the anomaly detection pipeline.
+
+### Forecasting Results
+
+**LSTM Forecast:**
+![LSTM Forecast](./images/image6.png)
+
+**XGBoost Forecast – Baseline:**
+![XGBoost Forecast Basic](./images/image7.png)
+
+**XGBoost Forecast – With Lag Features:**
+![XGBoost Forecast Lag](./images/image8.png)
 
 ## Section 4 - Results ##
 
