@@ -5,7 +5,12 @@
 
 ## Section 1 – Introduction
 
-This project aims to [briefly state the objective of the project, e.g., develop a machine learning-based anomaly detection model for time series data collected from transaction logs]. Our motivation stems from the need to [add your motivation: e.g., identify deviations in system behavior early to prevent potential failures or fraudulent activity]. By leveraging recent advances in forecasting models and unsupervised learning, our system enables proactive monitoring and early warning capabilities.
+This project focuses on the development of an anomaly detection system applied to a time-series dataset. The dataset consists of daily records of system alarms, including attributes such as Code_ID, Timestamp, Number of Transactions, Time Min, Time Max, Number of Retries, and Number of Wrong Transactions. These features capture essential aspects of transactional system behavior over time.
+
+The objective is to design and implement a pipeline that integrates forecasting models with anomaly detection techniques to identify unusual patterns or behaviors that deviate from expected trends.
+
+The ultimate goal is to detect deviations in system behavior at an early stage, in order to prevent potential failures or ambiguous activity. Early identification of such anomalies is crucial for maintaining operational reliability, as well as for uncovering possible system malfunctions or fraudulent actions.
+
 
 ---
 
