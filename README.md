@@ -51,7 +51,7 @@ GAN-based synthetic generation (via SDV) was discarded due to its failure to lea
 
 To validate each augmented dataset by these approaches, we conducted EDA comparing real and augmented distributions after every try. We evaluated the mean, standard deviation, min/max values, and quantiles of each key variable to ensure alignment with the original dataset. This step was crucial to confirm that the synthetic data enhanced model performance without compromising quality or introducing misleading patterns.
 
-### Synthetic vs Real Data 
+### Synthetic vs Real Data (showing one feature for demonstration purposes)
 
 **SDV:**
 ![Real vs Synthetic - SDV](./images/image3.png)
