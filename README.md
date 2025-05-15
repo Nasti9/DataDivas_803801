@@ -96,6 +96,9 @@ LOF compares the local density of each point to that of its neighbors, identifyi
 **Local Outlier Factor (LOF):**
 ![LOF Anomaly Detection](./images/image10.png)
 
+**Isolation Forest:**
+![Isolation Forest Anomaly Detection](./images/images11.png)
+
 ## Section 3 –  Experimental Design ## 
 
 ## 3.1 Forecasting ## 
