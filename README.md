@@ -19,6 +19,8 @@ The ultimate goal is to detect deviations in system behavior at an early stage, 
 We followed a sequential pipeline composed of four main phases: Exploratory Data Analysis (EDA), Data Augmentation, Forecasting, and Anomaly Detection.
 For each step, we tested different approaches and selected the one that gave the best results. This allowed us not to settle for the first attempt, but to explore multiple options and make more informed choices along the way.
 
+### 2.1 Exploratory Data Analysis (EDA) ###
+
 
 
 
