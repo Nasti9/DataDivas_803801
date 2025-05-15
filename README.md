@@ -1,5 +1,5 @@
 # Anomaly Detetction - REPLY 
-**Team Members:** Anastasia Farinaro (803801) , Gaia D'Amico, Alessia Lorenzini
+**Team Members:** Anastasia Farinaro, Gaia D'Amico, Alessia Lorenzini
 
 ---
 
@@ -28,6 +28,8 @@ We began with exploratory data analysis to uncover meaningful temporal behaviors
 - Failed Transactions: Highly variable with evening peaks, suggesting a correlation with traffic and potential anomalies.
 
 - Retry Attempts: Sparse values with a critical spike between 18:00 and 19:30, indicating a possible system failure or overload.
+
+![Temporal Evolution of Features](./images/image1.png)
 
 Performing a Correlation Matrix we saw that retry attempts are strongly associated with long processing times, while failed transactions moderately correlate with volume, and TEMPO MIN is inversely related to most features.
 Key correlations:
