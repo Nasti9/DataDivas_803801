@@ -1,22 +1,30 @@
- 1. A “README.md” file with the following information:
-• Title and Team members 
-• [Section 1] Introduction – Briefly describe your project. 
-• [Section 2] Methods – Describe your proposed ideas (e.g., features, design choices, algorithm(s), training overview, etc.) and your environment so that: 
-o A reader can understand why you made your design decisions and the reasons behind any other choice related to the project. 
-o A reader should be able to recreate your environment (e.g., conda list, conda envexport, etc.) 
-o It may help to include a figure illustrating your ideas, e.g., a flowchart illustrating the steps in your machine learning system(s) 
+# Anomaly Detetction - REPLY 
+**Team Members:** Anastasia Farinaro, Gaia D'Amico, Alessia Lorenzini
 
- • [Section 3] Experimental Design – Describe any experiments you conducted to demonstrate/validate the target contribution(s) of your project; indicate the following for each experiment: 
-o The main purpose: 1-2 sentence high-level explanation 
-o Baseline(s): describe the method(s) that you used to compare your work to. 
-o Evaluation Metrics(s): which ones did you use and why?
+---
 
-• [Section 4] Results – Describe the following: 
-o Main finding(s): report your results and what you might conclude from your work. 
-o Include at least one placeholder figure and/or table for communicating your findings. 
-o All the figures containing results should be generated from the code. 
+## Section 1 – Introduction
 
-• [Section 5] Conclusions – List some concluding remarks. In particular: 
-o Summarize in one paragraph the take-away point from your work. 
-o Include one paragraph to explain what questions may not be fully answered by your work as well as natural next steps for this direction of future work
+This project aims to [briefly state the objective of the project, e.g., develop a machine learning-based anomaly detection model for time series data collected from transaction logs]. Our motivation stems from the need to [add your motivation: e.g., identify deviations in system behavior early to prevent potential failures or fraudulent activity]. By leveraging recent advances in forecasting models and unsupervised learning, our system enables proactive monitoring and early warning capabilities.
+
+---
+
+## Section 2 – Methods
+
+Our pipeline integrates a combination of time-series forecasting and anomaly detection techniques. The workflow consists of the following stages:
+
+1. **Data Cleaning and Preprocessing:** Handling of missing values, feature engineering (lags, rolling averages).
+2. **Forecasting Models:** We trained both LSTM-based models and XGBoost regressors on enriched time-series features.
+3. **Anomaly Detection:** Residual-based anomaly scoring using statistical thresholds and Local Outlier Factor (LOF).
+4. **Evaluation and Visualization:** Metrics and visual outputs support interpretation of anomalies.
+
+**Design Choices:**
+- We chose LSTM for its ability to capture temporal dependencies and XGBoost for structured feature modeling.
+- LOF was selected for its robustness in identifying local density anomalies.
+- Synthetic data was generated using [SMOTE/TimeGAN, etc.] to augment underrepresented patterns and enhance generalization.
+
+**Environment Setup:**
+To recreate the environment, use the following:
+```bash
+conda env export > environment.yml
 
