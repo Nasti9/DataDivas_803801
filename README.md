@@ -21,6 +21,9 @@ For each step, we tested different approaches and selected the one that gave the
 
 ### 2.1 Exploratory Data Analysis (EDA) ###
 
+We conducted a time-based exploratory analysis of the numerical features. 
+The total transactions showed strong and repeatable daily patterns, making them suitable for forecasting. Failed transactions were more volatile but followed similar peak-hour trends, while retry attempts were extremely sparse, with localized spikes suggesting critical anomalies.  
+
 
 
 
